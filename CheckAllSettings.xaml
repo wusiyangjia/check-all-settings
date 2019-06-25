@@ -76,7 +76,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Flowchart DisplayName="Body" sap:VirtualizedContainerService.HintSize="764,1285" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+          <Flowchart DisplayName="Body" sap:VirtualizedContainerService.HintSize="760,1320" sap2010:WorkflowViewState.IdRef="Flowchart_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -84,8 +84,8 @@
                 <av:Size x:Key="ShapeSize">60,75</av:Size>
                 <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,136.5</av:PointCollection>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                <x:Double x:Key="Width">750.5</x:Double>
-                <x:Double x:Key="Height">1249</x:Double>
+                <x:Double x:Key="Width">746</x:Double>
+                <x:Double x:Key="Height">1284</x:Double>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <Flowchart.StartNode>
@@ -221,7 +221,7 @@
                         <OutArgument x:TypeArguments="x:String">[out_CheckErrorMessage]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[String.Format(row("Message").ToString, row("Key").ToString)]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[String.Format(row("Message").ToString, row("Key").ToString, row("Type").ToString, row("Match").ToString)]</InArgument>
                       </Assign.Value>
                     </Assign>
                     <ui:Break sap:VirtualizedContainerService.HintSize="244,22" sap2010:WorkflowViewState.IdRef="Break_3" />
