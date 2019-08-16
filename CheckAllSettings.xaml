@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>900,1946</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>900.8,1966.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CheckAllSettings_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -60,7 +60,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This workflow can be used to check all of item in config valuable.&#xD;&#xA;Add in config file a &quot;Checkings&quot; sheet that has three types of configurable check and returns message column.&#xD;&#xA;1.Key: Check of dictionary key exist.&#xD;&#xA;2.Type: Type check of value, involve a null check.&#xD;&#xA;3.Match: The regex used to format check of the string value, check with ToString.&#xD;&#xA;4.Message: a string of message for return, optionally use format items for replacing by the value of key, type and match.&#xD;&#xA;5.Description: Description of this check item.&#xD;&#xA;As for one key can be set more than one check item, thus return a different message when a different check item not pass.&#xD;&#xA;If need the latter check item takes effect, the former check item must be set, or else it will be ignored." DisplayName="CheckAllSettings" sap:VirtualizedContainerService.HintSize="860,1866" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This workflow can be used to check all of item in config dictionary.&#xA;Add in config file a &quot;Checkings&quot; sheet that has three types of configurable check and returns message column.&#xA;1.Key: Check of dictionary key exist.&#xA;2.Type: Type check of value, involve a null check.&#xA;3.Match: The regex used to format check of the string value, check with ToString.&#xA;4.Message: a string of message for return, optionally use format items for replacing by the value of key, type and match.&#xA;5.Description: Description of this check item.&#xA;As for one key can be set more than one check item, thus return a different message when a different check item not pass.&#xA;If need the latter check item takes effect, the former check item must be set, or else it will be ignored." DisplayName="CheckAllSettings" sap:VirtualizedContainerService.HintSize="860.8,1846.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="configCheckTable" />
     </Sequence.Variables>
@@ -70,19 +70,19 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[configCheckTable]" DisplayName="Read range settings" sap:VirtualizedContainerService.HintSize="822,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="[in_ConfigCheckSheet]" WorkbookPath="[in_ConfigFile]" />
-    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[configCheckTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="822,1473" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[configCheckTable]" DisplayName="Read range settings" sap:VirtualizedContainerService.HintSize="822.4,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="[in_ConfigCheckSheet]" WorkbookPath="[in_ConfigFile]" />
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[configCheckTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="822.4,1469.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Flowchart DisplayName="Body" sap:VirtualizedContainerService.HintSize="776,1320" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+          <Flowchart DisplayName="Body" sap:VirtualizedContainerService.HintSize="776,1320.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-                <av:Size x:Key="ShapeSize">60,75</av:Size>
+                <av:Size x:Key="ShapeSize">60,75.2</av:Size>
                 <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,136.5</av:PointCollection>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 <x:Double x:Key="Width">746</x:Double>
@@ -97,7 +97,7 @@
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <av:Point x:Key="ShapeLocation">397.5,286.5</av:Point>
-                  <av:Size x:Key="ShapeSize">85,87</av:Size>
+                  <av:Size x:Key="ShapeSize">84.8,87.2</av:Size>
                   <av:PointCollection x:Key="TrueConnector">397.5,330 300,330 300,436.5</av:PointCollection>
                   <av:PointCollection x:Key="FalseConnector">482.5,330 608,330 608,1143</av:PointCollection>
                 </scg:Dictionary>
@@ -108,7 +108,7 @@
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <av:Point x:Key="ShapeLocation">257.5,436.5</av:Point>
-                      <av:Size x:Key="ShapeSize">85,87</av:Size>
+                      <av:Size x:Key="ShapeSize">84.8,87.2</av:Size>
                       <av:PointCollection x:Key="TrueConnector">257.5,480 148,480 148,1159</av:PointCollection>
                       <av:PointCollection x:Key="FalseConnector">342.5,480 440,480 440,586.5</av:PointCollection>
                     </scg:Dictionary>
@@ -118,7 +118,7 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">40,1159</av:Point>
-                          <av:Size x:Key="ShapeSize">216,22</av:Size>
+                          <av:Size x:Key="ShapeSize">216,22.4</av:Size>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:Continue sap:VirtualizedContainerService.HintSize="216,22" sap2010:WorkflowViewState.IdRef="Continue_3">
@@ -136,7 +136,7 @@
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <av:Point x:Key="ShapeLocation">397.5,586.5</av:Point>
-                          <av:Size x:Key="ShapeSize">85,87</av:Size>
+                          <av:Size x:Key="ShapeSize">84.8,87.2</av:Size>
                           <av:PointCollection x:Key="TrueConnector">397.5,630 300,630 300,736.5</av:PointCollection>
                           <av:PointCollection x:Key="FalseConnector">482.5,630 608,630 608,1143</av:PointCollection>
                         </scg:Dictionary>
@@ -147,7 +147,7 @@
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <av:Point x:Key="ShapeLocation">257.5,736.5</av:Point>
-                              <av:Size x:Key="ShapeSize">85,87</av:Size>
+                              <av:Size x:Key="ShapeSize">84.8,87.2</av:Size>
                               <av:PointCollection x:Key="TrueConnector">257.5,780 148,780 148,1159</av:PointCollection>
                               <av:PointCollection x:Key="FalseConnector">342.5,780 440,780 440,873</av:PointCollection>
                             </scg:Dictionary>
@@ -157,7 +157,7 @@
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <av:Point x:Key="ShapeLocation">332,873</av:Point>
-                                  <av:Size x:Key="ShapeSize">216,54</av:Size>
+                                  <av:Size x:Key="ShapeSize">216,54.4</av:Size>
                                   <av:PointCollection x:Key="ConnectorLocation">440,927 440,986.5</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -174,7 +174,7 @@
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <av:Point x:Key="ShapeLocation">397.5,986.5</av:Point>
-                                      <av:Size x:Key="ShapeSize">85,87</av:Size>
+                                      <av:Size x:Key="ShapeSize">84.8,87.2</av:Size>
                                       <av:PointCollection x:Key="TrueConnector">267.5,830 120,830 120,261</av:PointCollection>
                                       <av:PointCollection x:Key="FalseConnector">482.5,1030 608,1030 608,1143</av:PointCollection>
                                     </scg:Dictionary>
@@ -236,7 +236,7 @@
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <av:Point x:Key="ShapeLocation">257.5,136.5</av:Point>
-                  <av:Size x:Key="ShapeSize">85,87</av:Size>
+                  <av:Size x:Key="ShapeSize">84.8,87.2</av:Size>
                   <av:PointCollection x:Key="FalseConnector">342.5,180 440,180 440,286.5</av:PointCollection>
                   <av:PointCollection x:Key="TrueConnector">257.5,180 148,180 148,1159</av:PointCollection>
                 </scg:Dictionary>
